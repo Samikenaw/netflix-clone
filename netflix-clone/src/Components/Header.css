@@ -1,0 +1,103 @@
+/* ===== Header Container ===== */
+.header_container {
+  width: 100%;
+  height: 70px;
+  background-color: #141414; /* Netflix dark background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  font-family: 'Netflix Sans', Arial, sans-serif;
+}
+
+/* ===== Left Side: Logo + Links ===== */
+.header_left {
+  display: flex;
+  align-items: center;
+}
+
+.header_left ul {
+  display: flex; /* horizontal layout */
+  align-items: center;
+  gap: 20px; /* space between links */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header_left li {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap; /* prevent wrapping */
+  transition: color 0.2s ease;
+}
+
+.header_left li:hover {
+  color: #e50914; /* Netflix red hover */
+}
+
+/* Logo image */
+.header_left li img {
+  height: 30px; /* Netflix style logo size */
+  width: auto;   /* maintain aspect ratio */
+}
+
+/* ===== Right Side: Icons (optional) ===== */
+.header_right {
+  display: flex;
+  align-items: center;
+}
+
+.header_right ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header_right li {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.header_right li:hover {
+  color: #e50914;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .header_left ul {
+    gap: 15px;
+  }
+
+  .header_left li {
+    font-size: 13px;
+  }
+
+  .header_left li img {
+    height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_left ul {
+    gap: 10px;
+  }
+
+  .header_left li {
+    font-size: 12px;
+  }
+
+  .header_left li img {
+    height: 25px;
+  }
+}
