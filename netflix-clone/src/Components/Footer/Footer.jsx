@@ -55,7 +55,7 @@ const Footer = () => {
           </select>
         </div>
 
-        <p className="footer_copy">© 2024 Netflix Clone</p>
+        <p className="footer_copy">© samuel Kenaw Netflix Clone</p>
       </div>
     </div>
   );
